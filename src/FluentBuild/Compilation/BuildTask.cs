@@ -227,7 +227,7 @@ namespace FluentBuild.Compilation
         ///<summary>
         /// Executes the compliation with the provided parameters
         ///</summary>
-        [Obsolete("This has been replaced with Task.Build(Using.[Compiler]). This method will dissapear in future versions.", false)]
+        [Obsolete("This has been replaced with Task.Build(Using.[Compiler]). This method will disappear in future versions.", false)]
         public void Execute()
         {
             InternalExecute();

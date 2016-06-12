@@ -137,7 +137,7 @@ public class RubyScriptRunner {
   }
 
   /**
-   * Creates process builder and setups it's commandLine, working directory, enviroment variables
+   * Creates process builder and setups it's commandLine, working directory, environment variables
    *
    * @param workingDir         Process working dir
    * @param executablePath     Path to executable file

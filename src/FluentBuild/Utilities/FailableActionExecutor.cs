@@ -15,7 +15,7 @@ namespace FluentBuild.Utilities
             {
                 if (onError == OnError.Fail)
                     throw;
-                Defaults.Logger.WriteDebugMessage("An error occured but ContinueOnError was set. Error: " + e);
+                Defaults.Logger.WriteDebugMessage("An error occurred but ContinueOnError was set. Error: " + e);
             }
         }
 
@@ -29,7 +29,7 @@ namespace FluentBuild.Utilities
             {
                 if (onError == OnError.Fail)
                     throw;
-                Defaults.Logger.WriteDebugMessage("An error occured but ContinueOnError was set. Error: " + e);
+                Defaults.Logger.WriteDebugMessage("An error occurred but ContinueOnError was set. Error: " + e);
             }
         }
     }

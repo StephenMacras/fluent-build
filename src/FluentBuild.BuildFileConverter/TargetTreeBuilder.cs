@@ -19,15 +19,15 @@ namespace FluentBuild.BuildFileConverter
         private static List<ITarget> BuildDependancyTree(IList<ITarget> dependancies)
         {
             var final = new List<ITarget>();
-            foreach (var dependancy in dependancies)
+            foreach (var dependency in dependancies)
             {
-                var buildDependancyTree = BuildDependancyTree(dependancy.DependsOn);
+                var buildDependancyTree = BuildDependancyTree(dependency.DependsOn);
                 foreach (var childDependancy in buildDependancyTree)
                 {
                     if (!final.Contains(childDependancy))
                         final.Add(childDependancy);    
                 }
-                final.Add(dependancy);
+                final.Add(dependency);
             }
             return final;
         }

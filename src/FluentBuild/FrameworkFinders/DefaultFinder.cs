@@ -92,7 +92,7 @@ namespace FluentBuild.FrameworkFinders
 
 
         ///<summary>
-        /// Creates a comma seperated list of paths used to find the SDK.
+        /// Creates a comma separated list of paths used to find the SDK.
         /// This is typically used to generate error message text
         /// when the SDK can not be found
         ///</summary>
@@ -102,7 +102,7 @@ namespace FluentBuild.FrameworkFinders
         }
 
         ///<summary>
-        /// Creates a comma seperated list of paths used to find the SDK.
+        /// Creates a comma separated list of paths used to find the SDK.
         /// This is typically used to generate error message text
         /// when the framework can not be found
         ///</summary>

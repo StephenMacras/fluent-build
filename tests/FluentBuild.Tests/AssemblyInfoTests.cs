@@ -17,12 +17,12 @@ namespace FluentBuild.Tests
         public void ShouldGenerateAssemblyInfoFile()
         {
             string outputLocation = rootFolder + "\\assemblyinfo.cs";
-            Task.CreateAssemblyInfo.Language.CSharp(x=>x.Import("non.existant.namespace")
+            Task.CreateAssemblyInfo.Language.CSharp(x=>x.Import("non.existent.namespace")
                 .Version("1.0.0.0")
                 .OutputPath(outputLocation));
 
             var expected = new StringBuilder();
-            expected.AppendLine("using non.existant.namespace;");
+            expected.AppendLine("using non.existent.namespace;");
             expected.AppendLine("using System.Reflection;");
             expected.AppendLine("[assembly: AssemblyVersionAttribute(\"1.0.0.0\")]");
 //            expected.AppendLine("[assembly: AssemblyTitleAttribute(\"\")]");

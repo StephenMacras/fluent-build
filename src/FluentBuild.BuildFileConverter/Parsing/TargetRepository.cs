@@ -48,7 +48,7 @@ namespace FluentBuild.BuildFileConverter.Parsing
         {
             //check each previously registered targets dependancies
             //if it depends on the target we are registering then
-            //ensure that the dependancy is updated (from unregisteredTarget to an actual Target)
+            //ensure that the dependency is updated (from unregisteredTarget to an actual Target)
             //foreach (var knownTarget in _knownTargets.Values)
             //{
             //    for (var index = 0; index < knownTarget.DependsOn.Count; index++)

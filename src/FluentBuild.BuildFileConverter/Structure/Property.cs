@@ -39,8 +39,8 @@ namespace FluentBuild.BuildFileConverter.Structure
             var startIndex = value.IndexOf("${");
             if (startIndex > -1)
             {
-                var dependancy = value.Substring(startIndex+2, value.IndexOf("}")-2-startIndex).Replace(".", "_");
-                DependsOnProperty.Add(dependancy);
+                var dependency = value.Substring(startIndex+2, value.IndexOf("}")-2-startIndex).Replace(".", "_");
+                DependsOnProperty.Add(dependency);
             }
 
             var lastDot = value.LastIndexOf('.');

@@ -36,12 +36,12 @@ namespace FluentBuild.MessageLoggers.MessageProcessing
                 ProcessTestSuite(testSuite);
             }
 
-            _logger.Write("TEST", String.Format("Run completed. Successfull: {0}  Failed: {1}  Ignored: {2}", successfull, failed,ignored));
+            _logger.Write("TEST", String.Format("Run completed. Successful: {0}  Failed: {1}  Ignored: {2}", successful, failed,ignored));
         }
 
         #endregion
 
-        private int successfull;
+        private int successful;
         private int ignored;
         private int failed;
 
@@ -56,7 +56,7 @@ namespace FluentBuild.MessageLoggers.MessageProcessing
                     switch ((string)testCase.Attribute("result"))
                     {
                         case "Success":
-                            successfull++;
+                            successful++;
                             logger.WriteTestPassed(ParseTime((string)testCase.Attribute("time")));
                             break;
                         case "Error":

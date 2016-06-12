@@ -10,7 +10,7 @@ namespace FluentBuild
         public void ShouldApplyValuesAndExecute()
         {
             //verifies that actions are applied
-            //the results are moved to a static variable of OutputValue if sucessfull
+            //the results are moved to a static variable of OutputValue if successful
             InternalExecutableTester.OutputValue = "";
             var subject = new ActionExcecutor();
             var value = "aw4sagh34";
@@ -34,7 +34,7 @@ namespace FluentBuild
         public void ShouldApplyValuesToItemWithConstructorAndExecute()
         {
             //verifies that actions are applied
-            //the results are moved to a static variable of OutputValue if sucessfull
+            //the results are moved to a static variable of OutputValue if successful
             InternalExecutableTester.OutputValue = "";
             var subject = new ActionExcecutor();
             var value = "aw4sagh34";

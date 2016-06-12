@@ -52,7 +52,7 @@ namespace FluentBuild.BuildExe
 
         private void ParseArg(string arg)
         {
-            arg = arg.Substring(1); //drop the preceeding - or / character
+            arg = arg.Substring(1); //drop the preceding - or / character
             string type = arg.Substring(0, arg.IndexOf(":")); //get the type
             string data = arg.Substring(arg.IndexOf(":") + 1); //get the value
 

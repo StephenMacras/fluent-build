@@ -89,7 +89,7 @@ namespace FluentBuild.AssemblyInfoBuilding
 
         /// <summary>
         /// States if the assembly is CLS Compliant. CLS compliant means that all classes only
-        /// expose features that are common accross all .NET languages.
+        /// expose features that are common across all .NET languages.
         /// </summary>
         /// <remarks>
         /// Things that make an assembly non-cls compliant:
@@ -356,7 +356,7 @@ namespace FluentBuild.AssemblyInfoBuilding
 
         /// <summary>
         /// States if the assembly is CLS Compliant. CLS compliant means that all classes only
-        /// expose features that are common accross all .NET languages.
+        /// expose features that are common across all .NET languages.
         /// </summary>
         /// <remarks>
         /// Things that make an assembly non-cls compliant:
